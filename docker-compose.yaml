@@ -20,8 +20,8 @@ services:
     container_name: catalogue
     depends_on:
     - mongodb
-  redis:
-    image: redis
+  #redis:
+    #image: redis
   user:
     image: user:v1
     container_name: user
@@ -32,5 +32,8 @@ services:
     image: cart:v1
     container_name: cart
     depends_on:
-    - catalogue
-    - redis  
+    - redis
+    - catalogue 
+  redis:
+  image: redis
+  
