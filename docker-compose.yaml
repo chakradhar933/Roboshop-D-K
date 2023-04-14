@@ -35,5 +35,5 @@ services:
     - redis
     - catalogue 
   redis:
-  image: redis
+    image: redis
   
