@@ -8,5 +8,5 @@ COPY package.json /opt/server/
 RUN ls -ltr
 RUN npm install
 COPY server.js /opt/server/
-CMD ["node", "server.js"]
+CMD ["node","server.js"]
 
