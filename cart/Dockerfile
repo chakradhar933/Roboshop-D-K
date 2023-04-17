@@ -5,7 +5,7 @@ RUN addgroup cart && adduser cart --system cart && usermod -aG cart cart
 RUN chown -R cart:cart /opt/server/
 USER cart
 COPY package.json /opt/server/
-ls -ltr
+RUN ls -ltr
 RUN npm install
 COPY server.js /opt/server/
 CMD ["node", "server.js"]
